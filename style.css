@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ff3030;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#nome, #preco {
+    width: 97.5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.2s;
+}
+
+#nome:focus, #preco:focus {
+    border-color: #4CAF50;
+}
+
+#btnAdd {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+#btnAdd:hover {
+    background: #45a049;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    background: #f0f0f0;
+    margin-top: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    align-items: center;
+}
+
+li span button:first-child {
+    background: #2196f3;
+    color: white;
+}
+
+li span button:last-child {
+    background: #e74c3c;
+    color: white;
+}
+
+button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#total {
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+    color: #333;
+}
+
+@media (max-width: 480px) {
+    #nome, #preco {
+        width: 100%;
+    }
+
+    li {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+}
